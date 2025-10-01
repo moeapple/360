@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;  
+  color: white;
+}
+
+/* 头部导航栏 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: white;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+nav {
+  flex-shrink: 0;
+}
+
+nav a {
+  background: #d3d3d3;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* 中间图片区 */
+.hero {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.hero img {
+  width: 100%;
+  height: auto; /* 保持比例，不拉伸 */
+  display: block;
+}
+
+/* welcome按钮 */
+.welcome {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.welcome button {
+  background: #d3d3d3;
+  padding: 10px 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ---------- 响应式 ---------- */
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-top: 10px;
+  }
+
+  .hero {
+    margin: 10px;
+  }
+
+  .welcome button {
+    width: 80%;
+  }
+}
