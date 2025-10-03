@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: cursive;
 }
 
 body {
@@ -10,23 +10,19 @@ body {
   color: white;
 }
 
-/* 头部导航栏 */
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background: white;
+  background: black;
 }
 
 header h1 {
   font-size: 1.2rem;
   text-align: center;
   flex-grow: 1;
-}
-
-nav {
-  flex-shrink: 0;
 }
 
 nav a {
@@ -37,7 +33,6 @@ nav a {
   font-weight: bold;
 }
 
-/* 中间图片区 */
 .hero {
   width: 100%;
   max-width: 900px;
@@ -46,11 +41,10 @@ nav a {
 
 .hero img {
   width: 100%;
-  height: auto; /* 保持比例，不拉伸 */
+  height: auto; 
   display: block;
 }
 
-/* welcome按钮 */
 .welcome {
   display: flex;
   justify-content: center;
@@ -60,12 +54,12 @@ nav a {
 .welcome button {
   background: #d3d3d3;
   padding: 10px 30px;
+  text-decoration: none;
   border: none;
   font-size: 1rem;
   cursor: pointer;
 }
 
-/* ---------- 响应式 ---------- */
 @media screen and (max-width: 600px) {
   header {
     flex-direction: column;
